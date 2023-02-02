@@ -18,17 +18,6 @@ form {
     margin: 20px 20px 0px 20px;
 }
 
-.app-form {
-    padding: 8px 16px;
-    /* position: fixed; */
-    /* bottom: 20px; */
-    z-index: 1;
-    background-color: #e9e9eb;
-    /* width: 100%; */
-    margin: 20px;
-    border-radius: 50px;
-    border: 0;
-}
 .MuiInputBase-root.MuiInput-root:before,
 .MuiInputBase-root.MuiInput-root:after {
     border-bottom: 0 !important;
@@ -53,4 +42,24 @@ form {
 .App {
     max-width: 560px;
     margin: 0 auto;
+}
+.app-form {
+    padding: 8px 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #e9e9eb;
+    margin: 20px;
+    border-radius: 50px;
+    border: 0;
+    max-width: unset;
+}
+@media screen and (min-width: 1024px) {
+    .app-form {
+        max-width: 520px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
