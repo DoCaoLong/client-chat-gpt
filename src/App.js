@@ -13,12 +13,11 @@ const generateUID = () => {
 
 function App() {
     const [prompt, setPrompt] = useState("");
-    // const [answer, setAnswer] = useState("");
     const [messages, setMessages] = useState([
         {
             id: generateUID(),
             name: "Anonymous",
-            text: "Xin chào, mình là Anonymous AI. Mình ở dây để trả lời bất kì câu hỏi nào bạn đưa ra...",
+            text: "Xin chào, mình là chú bé đần AI con ghẻ của chat GPT nên hỏi đơn giản thôi nhé..",
         },
     ]);
     const [isLoading, setisLoading] = useState(false);
